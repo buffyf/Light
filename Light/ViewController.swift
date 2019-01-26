@@ -13,8 +13,12 @@ import UIKit
 class ViewController: UIViewController {
 var lightOn = true
     @IBAction func buttonPressed(_ sender: Any) {
+        updateUI()
         
         lightOn = !lightOn
+    }
+    
+    func updateUI() {
         if lightOn {
             view.backgroundColor = .white
         } else {
